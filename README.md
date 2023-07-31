@@ -478,6 +478,139 @@
 # print(max(sov))
 
 # **************************************
-# problem 43 :-max value from sum of dict values in a list
+# problem 43 :- count of values in strings by mapping to a dictionary
 # **************************************
+
+# stri_ng = 'Excellent'
+# freq_dict = {}
+# for elem in stri_ng.lower():
+#     if elem.isalpha():
+#         if elem not in freq_dict:
+#             freq_dict[elem] = 1
+#         else:
+#             freq_dict[elem] += 1
+# print(freq_dict)
+
+# **************************************
+# problem 44 :- sorting list values in dictionary
+# **************************************
+
+# d = {'a': [4,3,2],'b': [5,3,7],'c': [1,9,10],'d': [3,4,1]}
+# for list_value in d.values():
+#     list_value.sort()
+# print(d)
+
+# **************************************
+# problem 45 :- dictionary key values to lists
+# **************************************
+
+# d = {'a': 1, 'b':2, 'c':3}
+# new_list = []
+# for key, value in d.items():
+#     new_list.append([key,value])
+# print(new_list)
+
+# **************************************
+# problem 46 :- ckeck positive/negative/zero
+# **************************************
+
+# a = int(input('enter a number'))
+# if a == 0:
+#     print('Zero ', 0)
+# elif a % 2 == 0:
+#     print('Even')
+# else:
+#     print('odd')
+
+# **************************************
+# problem 47 :- print vowel consonants in a string
+# **************************************
+
+
+# s = 'Rank : 1'
+# if len(s) == 0:
+#     print('empty string')
+# else:
+#     for char in s.lower():
+#         if char in ('a','e','i','o','u'):
+#             print(f"{char} is a vowel")
+#         elif not char.isalpha():
+#             print(f"{char} is a not a letter")
+#         else:
+#             print(f"{char} is a consonant")
+
+# **************************************
+# problem 48 :- max of three numbers
+# **************************************
+
+# s = (1,2,3)
+# print(max(s))
+# a = 17
+# b = 8
+# c = 6
+#
+# se = (a,b,c)
+# print(max(se))
+# if a > b and a > c:
+#     print(a)
+# elif b > c and b > a:
+#     print(b)
+# else:
+#     print(c)
+
+# **************************************
+# problem 49 :- min of three numbers
+# **************************************
+
+# s = (1,2,3)
+# print(min(s))
+# a = 1
+# b = 0
+# c = 6
+#
+# se = (a,b,c)
+# print(min(se))
+# if a < b and a < c:
+#     print(a)
+# elif b < c and b < a:
+#     print(b)
+# else:
+#     print(c)
+
+# **************************************
+# problem 50 :- seasons
+# **************************************
+
+# print({'season_num':'season'})
+# print({1:'spring'})
+# print({2:'summer'})
+# print({3:'fall'})
+# print({4:'winter'})
+#
+# enter_your_season_number = int(input('enter_your_season_number:--'))
+# print('enter_your_season_number is :-- ',enter_your_season_number)
+# if enter_your_season_number == 1:
+#     print('your enter_your_season_number season is :-- spring')
+# elif enter_your_season_number == 2:
+#     print('your enter_your_season_number season is :-- summer')
+# elif enter_your_season_number == 3:
+#     print('your enter_your_season_number season is :-- fall')
+# elif enter_your_season_number == 4:
+#     print('your enter_your_season_number season is :-- winter')
+# else:
+#     print('please enter a valid number')
+
+# **************************************
+# problem 51 :- if all are equal
+# **************************************
+# a=1
+# b=1
+# c=1
+# s = (a,b,c)
+# if a == b == c:
+#     print(s)
+#     print('Equal')
+# else:
+#     print(s)
+#     print('Not Equal')
 
