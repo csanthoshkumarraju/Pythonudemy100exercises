@@ -32,6 +32,7 @@
 #     print(your_string)
 # else:
 #     print('Reverse of your string ', your_string, 'is', your_string[::-1])
+import math
 
 # a = 'hcbv'
 # print("".join(reversed(a)))
@@ -613,4 +614,150 @@
 # else:
 #     print(s)
 #     print('Not Equal')
+
+# **************************************
+# problem 52 :- days in a months
+# **************************************
+
+# month = 'February'
+# month_31d = ('January','March','May','July','August','october','December')
+# month_30_days = ('April','June','September','November')
+# if month in month_31d:
+#     print(f"{month} has :-- 31 days")
+# elif month in month_30_days:
+#     print(f"{month} has :-- 30 days")
+# elif month == 'February':
+#     print(print(f"{month} has :-- 28 days"))
+# else:
+#     print('please give name of a month')
+
+# **************************************
+# problem 53 :- incraesing or decreasing order
+# **************************************
+# a = 5
+# b = 2
+# c = 3
+# print(a,b,c)
+# if a > b > c :
+#     print('Decreasing order')
+# elif a < b < c :
+#     print('Increasing order')
+# else:
+#     print('none')
+
+# **************************************
+# problem 54 :- quadratic equation
+# **************************************
+# import math
+# a= 3
+# b= 4
+# c= 5
+#
+# descr = b**2 - 4*a*c
+# if descr < 0:
+#     print('complex roots')
+# elif descr == 0:
+#     r = -b/(2*a)
+#     print(2)
+# else:
+#     r1 = (-b - math.sqrt(descr))/(2*a)
+#     r2 = (-b + math.sqrt(descr))/(2*a)
+#     print(r1, r2)
+
+# **************************************
+# problem 55 :- leap year
+# **************************************
+
+# year = int(input('enter your year:--'))
+# if year % 4 == 0:
+#     print(year,'is a leap year')
+# else:
+#     print(year,'is Not a leap year')
+
+# **************************************
+# problem 56 :- calculator
+# **************************************
+
+# v1 = int(input('Please enter the first value: - '))
+# v2 = int(input('Please enter the first value: - '))
+# print('Great! Now enter the operation')
+# print( ' these are the available options')
+# print('1 - Addition')
+# print('2 - Subtraction')
+# print('3 - Multiplication')
+# print('4 - Division')
+# print('5 - Integer division')
+# print('6 - Modulo/remainder')
+# operation = int(input('enter a operator number :--'))
+# if operation == 1:
+#     print(v1, ' + ', v2, '=', v1+v2)
+# elif operation == 2:
+#     print(v1, ' - ', v2, '=', v1-v2)
+# elif operation == 3:
+#     print(v1, ' * ', v2, '=', v1*v2)
+# elif operation == 4:
+#     print(v1, ' / ', v2, '=', v1/v2)
+# elif operation == 5:
+#     print(v1, ' ** ', v2, '=', v1**v2)
+# elif operation == 6:
+#     print(v1, ' // ', v2, '=', v1//v2)
+# elif operation == 7:
+#     print(v1, ' % ', v2, '=', v1%v2)
+# else:
+#     print('please enter a valid operator')
+#
+# **************************************
+# problem 57 :- rock scissors paper game
+# **************************************
+# import random
+# game = ['Paper','Rock','Scissors']
+# computer = game[random.randint(0, 2)]
+# print('===========welcome to the game=============')
+# print('please enter Rock,Paper, or Scissors below')
+# your_choice = input('enter a value from Rock,Paper, or Scissors')
+# print(your_choice)
+# print('computer choice :--',computer)
+# if computer.lower() == your_choice.lower:
+#     print('tie please try again')
+# elif computer == 'Rock':
+#     print('you lose! computer won please try again')
+# else:
+#     print('Congrats You WON')
+
+# **************************************
+# problem 58 :- first positive 15 integers
+# **************************************
+# i = 1
+# for i in range(i, 16):
+#     print(i)
+
+# **************************************
+# problem 59 :- reverse of number
+# **************************************
+
+# n = int(input('enter a number'))
+# for i in range(n,0,-1):
+#     print(i)
+
+# **************************************
+# problem 60 :- print sum of first non - negative numbers
+# **************************************
+
+# sum_of_first_numbers = int(input(' enter a value sum_of_first_numbers'))
+# print('your value is :--' ,sum_of_first_numbers)
+# sum_of_values = (sum_of_first_numbers/2) * (1 + sum_of_first_numbers)
+# print('sum of first of your value is:--')
+# print(int(sum_of_values))
+#
+# **************************************
+# problem 61 :- multiplication table
+# **************************************
+# num = int(input('enter a number for your multiplication table'))
+# i = int(input('enter times of your number value :--'))
+# for a in range(0,i + 1):
+#     print(num, ' * ', a, ' = ', num * a)
+
+# **************************************
+# problem 62 :-
+# **************************************
 
