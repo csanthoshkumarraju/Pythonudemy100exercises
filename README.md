@@ -758,6 +758,341 @@ import math
 #     print(num, ' * ', a, ' = ', num * a)
 
 # **************************************
-# problem 62 :-
+# problem 62 :- alphabetical order
+# **************************************
+# for i in range(65,91):
+#     print(chr(i))
+#
+# **************************************
+# problem 63 :- print first 1 st 100 even numbers
+# **************************************
+# n = int(input('enter the first count of even numbers'))
+# print('the first ', n, ' even numbers are:--')
+# for i in range(1, n+1):
+#     print(i * 2)
+
+# **************************************
+# problem 64 :- factorial
+# **************************************
+# i = int(input('enter a number for your factorial :--'))
+# factorial= 1
+# for i in range(2,i+1):
+#     factorial *= i
+# print(factorial)
+
+# **************************************
+# problem 65 :- prime number
+# **************************************
+# pn = int(input('enter your number:--'))
+# if pn == 1 or pn == 0:
+#     print(pn, 'is not a prime number')
+# elif pn == 2:
+#     print(pn, 'is a prime number')
+# else:
+#     for i in range(2,pn):
+#         if pn % i == 0:
+#             print(pn, 'is not a prime number')
+#             break
+#     else:
+#         print(pn, 'is a prime number')
+
+# **************************************
+# problem 66 :- print a pattern
+# **************************************
+# n = int(input('enter your number'))
+# for i in range(1,n+1):
+#     print ('*' * i)
+
+# **************************************
+# problem 67 :- reverse of a digit
 # **************************************
 
+# d = int(input('enter your digit:--'))
+# print('Your digit is :--', d)
+# st = str(d)
+# print('Reverse digit of your number is :--', st[::-1])
+
+# **************************************
+# problem 68 :- reverse of a string
+# **************************************
+
+# st =input('enter your string:--')
+# print('Your string is :--', st)
+# print('Reverse digit of your number is :--', st[::-1])
+
+# **************************************
+# problem 69 :- half pyramid
+# **************************************
+# num_rows = int(input('enter the number of rows:--'))
+# k = (2 * num_rows) - 2
+# for i in range(0,num_rows):
+#     for j in range(0, k):
+#         print('', end=' ')
+#     k = k -2
+#     for j in range(0, i+1):
+#         print('*', end=' ')
+#     print('')
+
+# **************************************
+# problem 70 :- floyd's triangle
+# **************************************
+
+# num_rows = int(input('enter the number of rows:--'))
+# count = 1
+# for i in range(1,num_rows +1):
+#     for j in range(0, i):
+#         print(count, end=' ')
+#         count += 1
+#     print()
+
+# **************************************
+# problem 71 :- triangular letters pattern
+# **************************************
+
+# num_rows = int(input('enter the number of rows:--'))
+# for i in range(0,num_rows):
+#     print(chr(65 + i) * (i + 1))
+
+# **************************************
+# problem 72 :- diamond
+# **************************************
+
+# height = int(input('enter the diamonds height (an odd number)'))
+# if height % 2 ==0:
+#     print('please enter an odd value for the height (number of rows')
+# else:
+#     middle_rows = (height + 2) // 2
+#     for i in range(middle_rows):
+#         print(' ' * (middle_rows - i), '*' * (i*2 + 1))
+#     for i in range(middle_rows-2,-1,-1):
+#         print(' ' * (middle_rows - i), '*' * (i*2 + 1))
+
+# **************************************
+# problem 73 :- sum of a list
+# **************************************
+
+# l = [1,2,3,4]
+# print(sum(l))
+
+# **************************************
+# problem 74 :- financial number
+# **************************************
+
+# def fibonacci(n):
+#     if n == 0 or n ==1:
+#         return n
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
+# v = fibonacci(9)
+# print(v)
+# **************************************
+# problem 75 :- factorial
+# **************************************
+# i = int(input('enter a number for your factorial :--'))
+# factorial= 1
+# for i in range(2,i+1):
+#     factorial *= i
+# print(factorial)
+
+# **************************************
+# problem 76 :- sum of a digit in i a digit
+# **************************************
+# def sum_of_digits(number):
+#     if number == 0:
+#         return 0
+#     else:
+#         return (number%10) + sum_of_digits(number // 10)
+# print(sum_of_digits(12))
+
+# **************************************
+# problem 77 :- power of a number
+# **************************************
+# a = int(input('enter your number'))
+# b = int(input('enter your power/times for number number'))
+# print(a ** b)
+
+# **************************************
+# problem 78 :-  gcd
+# **************************************
+# def find_gcd(a,b):
+#     if b == 0:
+#         return a
+#     else:
+#         return find_gcd(b, a%b)
+# print(find_gcd(60,48))
+
+# **************************************
+# problem 79 :-  palindrome
+# **************************************
+# string = input('enter your string')
+# print('your string is :--',string)
+# rev = string[::-1]
+# print('reverse of your string is :--',rev)
+# if string.lower() == rev.lower():
+#     print(string, 'is a palindrome')
+# else:
+#     print(string, 'is not a palindrome')
+
+# **************************************
+# problem 80 :-  vowels in a string
+# **************************************
+
+# def count_vowels(string):
+#     string = string.lower()
+#
+#     if not string:
+#         return 0
+#     elif string[0] in ('a','e','i','o','u'):
+#         return 1+ count_vowels(string[1:])
+#     else:
+#         return count_vowels(string[1:])
+# print(count_vowels('aeioubchjmdshjfbsh'))
+
+# **************************************
+# problem 81 :- pattern
+# **************************************
+
+# def patt(n):
+#     if n==1:
+#         print('*')
+#     else:
+#         print('*' * n)
+#         patt(n -1)
+# print(patt(9))
+# **************************************
+# problem 82 :- int to binary
+# **************************************
+# def int_bin(decnum):
+#     if decnum ==0:
+#         return '0'
+#     else:
+#         return (int_bin(decnum // 2)+str(decnum%2)).lstrip('0')
+# print(int_bin(12))
+
+# **************************************
+# problem 83 :- binary search
+# **************************************
+
+# def bns(seq,low,high,elem):
+#     if low > high:
+#         return -1
+#     else:
+#         middle = (low + high) // 2
+#         if elem == seq[middle]:
+#             return middle
+#         elif elem < seq[middle]:
+#             return bns(seq,low,middle - 1 ,elem)
+#         else:
+#             return bns(seq,middle + 1,high,elem)
+# print(bns(1,2,3,4))
+
+# **************************************
+# problem 84 :- read text a file
+# **************************************
+# python file is created in next tab.
+# filer = "pythonfiles.txt"
+# file_content =[]
+# with open(filer) as file:
+#     for line in file:
+#         file_content.append(line)
+# print(file_content)
+
+# **************************************
+# problem 85 :- print the first n lines
+# **************************************
+
+# file_path = "pythonfiles.txt"
+# n = int(input('how many lines would you like to read:'))
+# with open(file_path) as file:
+#     lines = file.readlines()
+#     num_lines = len(lines)
+#     if num_lines < n:
+#         print(f"please enter a valid value. the file has {num_lines} lines")
+#     else:
+#         for i in range(n):
+#             print(lines[i].strip())
+#
+
+# **************************************
+# problem 86 :- print the last n lines
+# **************************************
+# file_path = "pythonfiles.txt"
+# n = int(input('how many last lines would you like to read:'))
+# with open(file_path) as file:
+#     lines = file.readlines()
+#     num_lines = len(lines)
+#     if num_lines < n:
+#         print(f"please enter a valid value. the file has {num_lines} lines")
+#     else:
+#         for i in range(-n,0):
+#             print(lines[i].strip())
+
+# **************************************
+# problem 87 :- longest word in a text file
+# **************************************
+
+# file_path = "pythonfiles.txt"
+# longest_word = ''
+# with open(file_path) as file:
+#       for word in file:
+#           if len(word) > len(longest_word):
+#               longest_word = word
+# print(longest_word)
+
+# **************************************
+# problem 88 :- frequency of words in a file into a dictionary
+# **************************************
+# file_path = "pythonfiles.txt"
+# freq_dict = {}
+# with open(file_path) as file:
+#        for word in file:
+#            word = word.strip('\n')
+#            if word not in freq_dict:
+#                freq_dict[word] =1
+#            else:
+#                freq_dict[word] +=1
+# print(freq_dict)
+
+
+# **************************************
+# problem 89 :- list in a file to separate line
+# **************************************
+# file_path = "pythonfiles.txt"
+# my_list = [1,2,3,4,5]
+# with open(file_path,'w') as file:
+#        for word in my_list:
+#            file.write(str(word) + '\n')
+#
+
+# **************************************
+# problem 90 :- length of characters in file
+# **************************************
+# file_path = "pythonfiles.txt"
+# char_count = 0
+# with open(file_path) as file:
+#        for word in file:
+#            char_count = len(word.replace(' ','').strip('\n'))
+# print(char_count)
+
+# **************************************
+# problem 91 :- copy from file and write in new file
+# **************************************
+# file_path = "pythonfiles.txt"
+# copy_path = "pythonfiles1.txt"
+# with open(file_path) as file, open(copy_path, "w") as copy:
+#        for word in file:
+#            copy.write(word)
+
+# **************************************
+# problem 92 :- python file checking in path
+# **************************************
+# import os.path
+# file_path = "pythonfiles.txt"
+# if os.path.isfile(file_path):
+#     print(f'The file {file_path} exists')
+# else:
+#     print(f'The file {file_path} notexists')
+
+# **************************************
+# problem 93 :- 
+# **************************************
