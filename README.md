@@ -1094,5 +1094,127 @@ import math
 #     print(f'The file {file_path} notexists')
 
 # **************************************
-# problem 93 :- 
+# problem 93 :- current date and time
 # **************************************
+# import datetime
+# print('Current Date and Time')
+# print(datetime.datetime.now())
+
+# **************************************
+# problem 94 :- converting seconds to minutes and hours
+# **************************************
+
+# seconds = 5400
+# minutes = seconds // 60
+# hours = minutes/60
+#
+# print(seconds, ' is equivalent to')
+# print(minutes, ' minutes')
+# print(hours, 'seconds')
+# **************************************
+# problem 95 :- area of a circle
+# **************************************
+# import math
+# diameter = int(input('enter your diameter:--'))
+# radius = diameter/2
+# pi = math.pi
+# area = pi * radius ** 2
+# print(' The area of a circle with diameter ', diameter, ' is :-', area)
+
+# **************************************
+# problem 96 :- area of a triangle
+# **************************************
+
+# print('please enter valid values for base and height :-')
+# base = int(input('enter your base:--'))
+# height = int(input('enter your height:--'))
+# area_of_circle = (base * height ) / 2
+# print(' The area of a triangle with base ', base, ' and height  ',height, ' is:--', area_of_circle)
+
+# **************************************
+# problem 97 :- celsius to fahrenheit
+# **************************************
+
+# print('please enter valid celsius value  :-')
+# celsius = int(input('enter your celsius value:--'))
+# fahrenheit = (celsius * 9/5) + 32
+# print(celsius, 'celsius = ',fahrenheit, ' fahrenheit' )
+
+# **************************************
+# problem 98 :- fahrenheit to celsius
+# **************************************
+
+# print('please enter valid fahrenheit value  :-')
+# fahrenheit = int(input('enter your celsius value:--'))
+# celsius = (fahrenheit - 32) * 5/9
+# print(fahrenheit, 'celsius = ',celsius, ' fahrenheit' )
+
+# **************************************
+# problem 99 :- body  mass index
+# **************************************
+# print('please enter valid height and weight values  :-')
+# height = int(input('enter your height value in cm:--'))
+# weight = int(input('enter your weight value in kgs:--'))
+# metres = height / 100
+# bmi = weight / metres ** 2
+# print('The body  mass index of a person with the height in cms : ', height, 'and weight in kgs : ',weight, 'is :-', bmi)
+# if bmi < 18.5:
+#     print(' The person is Underweight')
+# elif 18.5 < bmi < 25:
+#     print(' The person is normal')
+# elif 25 < bmi < 30:
+#     print(' The person is Overweight')
+# elif bmi > 30:
+#     print(' The person is obesity')
+# else:
+#     print(' please give valid details')
+# **************************************
+# problem 100 :- print calender
+# **************************************
+# import calendar
+# print('welcome to the python calender')
+# year = int(input('enter the year as YYYY format'))
+# month = int(input('now enter the month(1-12: '))
+# print(calendar.month(year,month))
+# **************************************
+# problem 101 :- difference between two days
+# **************************************
+# import datetime
+# date1 = datetime.datetime(2023,2,2)
+# date2 = datetime.datetime(2023,3,2)
+# print('first date is ', date1)
+# print('second date is ', date2)
+# print(' difference is ', date2 - date1)
+
+# **************************************
+# problem 102 :- match string
+# **************************************
+# import re
+# search = "^My[\w\s]+blue$"
+# str = input('enter a string to check if a match is found:')
+# if re.search(search,str):
+#     print('match')
+# else:
+#     print('No match')
+# **************************************
+# problem 103 :- check balanced brackets
+# **************************************
+# def bal_brac(string):
+#     count = 0
+#     for bracket in string:
+#         if bracket == '[':
+#             count +=1
+#         elif bracket == ']':
+#             count -=1
+#         if count < 0:
+#             break
+#     return count == 0
+# 
+# print(bal_brac(('[]')))
+# print(bal_brac(('[[]')))
+# print(bal_brac(('[]]')))
+# print(bal_brac((']')))
+# print(bal_brac(('[[][]]')))
+# print(bal_brac(('[[]]')))
+# print(bal_brac(('[][[]')))
+# 
